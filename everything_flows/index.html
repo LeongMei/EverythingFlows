@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <link rel="stylesheet" type="text/css" href=v5.css"-->
+
+
+
+  <!-- PLEASE NO CHANGES BELOW THIS LINE (UNTIL I SAY SO) -->
+  <script language="javascript" type="text/javascript" src="libraries/p5.min.js"></script>
+  <script language="javascript" type="text/javascript" src="libraries/p5.sound.min.js"></script>
+  <script language="javascript" type="text/javascript" src="mei_sketch_20_10_2.js"></script>
+  <!-- OK, YOU CAN MAKE CHANGES BELOW THIS LINE AGAIN -->
+ 
+  <title>Everything Flows - M LEONG</title>
+  <!-- This line removes any default padding and style.
+       You might only need one of these values set. -->
+   <style>
+   body{
+     cursor: url('mouse3.png'),auto;
+     background:#000;
+   }
+   h1{
+     padding-left: 10px;
+     padding-right:10px;
+     padding-bottom:0px;
+     color:white;
+     font-size:40pt;
+     font-family:"Louise-Regular",louise;
+ }
+ 
+ .info
+ {display:flex;
+ width:800px;
+      padding-left: 10px;
+        margin: 20px;
+
+}
+ 
+ .text
+ {color:white;
+     font-size:14pt;
+     font-family:"FT88-School", FT88 School;
+ }
+ 
+ .captioncontainer {
+   width:380px;
+   max-wdith:350px;
+   padding-left: 5px;
+   margin: 20px; }
+    
+ .glow{
+  padding-left: 10px;
+  padding-right:10px;
+  padding-bottom:0px;
+  color: #fff;
+  text-align: left;
+  font-size: 20px;
+  font-family:"LegacySansStd-Book";
+  
+  -webkit-animation: glow 1s ease-in-out infinite alternate;
+  -moz-animation: glow 1s ease-in-out infinite alternate;
+  animation: glow 1s ease-in-out infinite alternate;
+}
+
+@-webkit-keyframes glow {
+  from {
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #00008B, 0 0 40px #00008B, 0 0 50px #00008B, 0 0 60px #e60073, 0 0 70px #e60073;
+  }
+  to {
+    text-shadow: 0 0 20px #fff, 0 0 30px #ff4da6, 0 0 40px #ff4da6, 0 0 50px #ff4da6, 0 0 60px #ff4da6, 0 0 70px #ff4da6, 0 0 80px #ff4da6;
+  }
+}
+
+.credits p{
+ align:bottom;
+ color:white;
+ font-size:13px;
+  font-family:"LegacySansStd-Book";
+ }
+ 
+ #bottom {
+  position: absolute;
+  bottom: 0;
+  left: 10;
+ }
+   </style>
+   
+ 
+   
+  </head>
+  
+
+<body>
+<header>
+      
+            <h1> 
+                  Everything Flows
+         
+          </h1>
+    
+ </header>
+ 
+<!--<div class="info">
+  <div class="text">Everything Flows is an interactive P5.JS sketch.  
+Waveforms, interference and flow inspired the work.  
+This sketch is a departure from the Falling series.
+Rather than human bodies in free fall, particles are pixel bodies in motion. They fall and rise, settling to create patterns.  </div>-->
+ 
+<div class="captioncontainer">
+ <div class="glow">Everything Flows is an interactive P5.JS sketch.  
+Waveforms, interference and flow inspired the work.  
+This sketch is a departure from the Falling series.
+Rather than human bodies in free fall, particles are pixel bodies in motion. They fall and rise, settling to create patterns.  </div>
+  <div id="bottom"> <div class="credits">
+ <p> CODE: Addie Baron (Chladni via Github) <a alt="More info", href="https://github.com/addiebarron/chladni" target="_blank">&#9432;</a> Thank You to Jonathan Swanson and Karen ann Donnachie for code support. 
+</br>
+FONT: Degheest Louise, Velvetyne Type Foundry, Legacy Sans Book </p>
+  </div>
+  </div>
+  </div>
+  </div>
+
+
+    <!-- <center>
+     <input name ="soundSlider" type="range" id="soundSlider" min="0" max="20" step="1/20" value="0">
+    </center>-->
+
+  <!--hidden sliders (m,m,v,num) style display:none tag-->
+      
+        <label for="vSlider" style="display:none">vibration strength:</label>
+        <input name="vSlider" type="range" id="vSlider" min="0.0" max="0.08" step="0.02" value="0.2" style="display:none"> 
+
+        <label for="numSlider"style="display:none">number of particles:</label>
+        <input name="numSlider" type="range" id="numSlider" min="1000" max="10000" step="1000" value="10000" style="display:none">
+
+
+</body>
+</html>
